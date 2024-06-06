@@ -15,19 +15,20 @@ header {
     grid-template-rows: 60fr 30fr;
 }
 
-header p {
+header h1 {
     padding: 2rem;
 }
 
 nav {
     background-color: black;
-    display: grid;
-    grid-template-columns: repeat(4, auto);
+    display: flex;
+    justify-content: space-around;
 }
 
 nav a {
     text-align: center;
     padding: 2rem;
+    width: 100%;
     text-decoration: none;
     color: white;
 }
@@ -43,8 +44,15 @@ main {
     height: 100%;
 }
 
+img {
+    width: 25%;
+    margin: 8px;
+    border: black solid 4px;
+}
+
 main p {
     padding: 2rem;
+    padding-bottom: 0;
 }
 
 #aside_content {
