@@ -1,11 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-    </head>
-    <body>
-        Hello World o/
-    </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WDD 131 - Dynamic Web Fundamentals - CorryMP</title>
+    <meta name="author" content="CorryMP">
+    <meta name="description"
+        content="This is the homepage for Corry McConnell Palmer's classwork in 'WDD 131 - Dynamic Web Fundamentals'." />
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>WDD 131: Dynamic Web Fundamentals - <span id="header_name">Corry McConnell Palmer</span></h1>
+            <nav id="nav">
+                <a href="https://www.linkedin.com/in/corry-palmer" target="_blank">LinkedIn</a>
+                <a href="https://byui.instructure.com/" target="_blank">I-Learn</a>
+                <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/ps/23?lang=eng&id=p1-p6#p1" target="_blank">Scripture</a>
+                <a href="#">Final Project</a>
+            </nav>
+        </header>
+        <main>
+            <section class="card">
+                <h2>About Me</h2>
+                <img class="selfie" src="images/corry_san_diego_temple.png"
+                    alt="Corry in front of the San Diego California Temple">
+                <p class="card-text">My name is Corry McConnell Palmer. I am from San Diego County, California.<br>
+                    I previusly made
+                    <a href="https://corrymp.github.io/wdd130/thebestboy/" target="_blank">another</a>
+                    website about my cat which you are welcome to view.<br>
+                    I am involved in a lot of Minecraft related projects, hence the list of sites I use.<br>
+                    I hope you enjoy your visit.
+                </p>
+                <h3>San Diego County, California</h3>
+                <hr>
+                <div class="san-diego-map">
+                    <a href="https://www.google.com/maps/place/San+Diego+County,+CA/@33.0153772,-117.4697752,10z/" target="_blank"><img class="san-diego-map-image" src="images/san_diego_county.png" alt="Map of San Diego County"></a> 
+                    <p class="san-diego-map-text">San Diego County, California - Map sourced from Google</p>
+                </div>
+                <p class="card-text">Here in Southern California, we are blessed with easy access to several Temples. I
+                    served in the San
+                    Diego, California Temple for over 6 years, and and have visited many others.<br>
+                    Also local to me is LEGOLAND California, and Disneyland is not too long a drive.</p>
+            </section>
+            <section class="card">
+                <h2>Sites I Use</h2>
+                <ul>
+                    <li><a href="https://minecraft.wiki/" target="_blank">Minecraft Wiki</a></li>
+                    <li><a href="https://mcstacker.net/" target="_blank">MCStacker</a></li>
+                    <li><a href="https://misode.github.io/" target="_blank">Misode Generators</a></li>
+                    <li><a href="https://www.minecraftjson.com/" target="_blank">Minecraft JSON</a></li>
+                    <li><a href="https://crafting.thedestruc7i0n.ca/" target="_blank">Crafting Generator</a></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> | Corry McConnell Palmer | California</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+
 </html>
