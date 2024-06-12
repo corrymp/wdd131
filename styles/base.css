@@ -18,7 +18,7 @@ h1 {
     color: white;
     text-align: center;
     padding: 15px;
-    font-family: 'Times New Roman', serif;
+    font-family: "Lora", serif;
 }
 
 h3 {
@@ -40,7 +40,6 @@ ul {
 }
 
 li {
-    flex: auto initial 1;
     margin-left: 2em;
     font-size: 1.1em;
 }
@@ -61,7 +60,7 @@ body {
 #content {
     max-width: 1600px;
     margin: 0 auto;
-    font-family: Tahoma, sans-serif;
+    font-family: "Cousine", monospace;
 }
 
 /* Header */
@@ -119,7 +118,7 @@ main {
     border-bottom: #444 solid 2px;
     padding: 8px;
     text-align: center;
-    font-family: 'Times New Roman', serif;
+    font-family: "Lora", serif;
 }
 
 .card-text {
