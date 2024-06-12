@@ -14,10 +14,10 @@ hr {
 }
 
 h1 {
-    font-size: 2em;
+    font-size: 1.75em;
     color: white;
     text-align: center;
-    padding: 15px;
+    padding: 16px;
     font-family: "Lora", serif;
 }
 
@@ -37,6 +37,7 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 8px;
 }
 
 li {
@@ -91,7 +92,7 @@ header {
 #nav a:hover {
     background-color: #333;
     color: #6495ed;
-    box-shadow: #999 2px 2px, #999 -1px -1px, #999 2px -1px, #999 -1px 2px;
+    box-shadow: #999 1px 1px, #999 -1px -1px, #999 1px -1px, #999 -1px 1px;
     text-shadow: #2051a9 2px 2px;
 }
 
@@ -100,7 +101,7 @@ main {
     background-color: beige;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 16px 8px;
+    padding: 16px 8px 13px 8px;
 }
 
 .card {
@@ -120,7 +121,9 @@ main {
     text-align: center;
     font-family: "Lora", serif;
 }
-
+#upper-content .card-text {
+    margin-top: 32px;
+}
 .card-text {
     color: black;
     margin: 16px;
@@ -128,14 +131,14 @@ main {
 
 .selfie {
     float: right;
-    width: 20%;
-    margin: 8px 8px 8px 16px;
+    width: 125px;
+    margin: -16px 8px 8px 16px;
 }
 
 .san-diego-map {
     float: left;
     width: 10em;
-    margin: 0px 16px 32px 8px;
+    margin: 0px 16px 23px 8px;
 }
 
 .san-diego-map-image {
@@ -153,16 +156,18 @@ main {
 footer {
     background-color: #1e5d5f;
     text-align: center;
-    height: 78px;
+    height: 100%;
+    padding: 10px;
 }
 
 footer p {
     color: white;
-    padding-top: 8px;
+    padding: 6px 0;
 }
 
 #lastModified {
     color: #ffffaf;
+    font-size: 0.9em;
 }
 
 @media screen and (max-width: 900px) {
