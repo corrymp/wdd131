@@ -40,6 +40,8 @@
 
     .nav .active:hover {
         background-color: #58a1a3;
+        color: #2051a9;
+        text-shadow: #6495ed 2px 2px;
     }
 
     #temple-album {

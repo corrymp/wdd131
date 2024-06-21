@@ -44,7 +44,6 @@ body {
 header {
     background-color: #1e5d5f;
     grid-column: 1/4;
-    height: 5rem;
 }
 
 /* Menu Button*/
