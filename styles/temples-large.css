@@ -1,51 +1,24 @@
 @media screen and (min-width: 900px) {
-    #content {
-        max-width: unset;
-        display: block;
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     #menu {
         display: none
     }
 
-    header {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
     .nav {
         flex-direction: row;
-        justify-content: space-between;
-        background-color: inherit;
     }
 
     .nav a {
+        align-items: center;
         display: flex;
         justify-content: space-around;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-    .nav a:hover {
-        background-color: #003f37;
-        box-shadow: none;
-    }
-
-    .nav .active {
-        background-color: #58a1a3;
-        color: #000;
-    }
-
-    .nav .active:hover {
-        background-color: #58a1a3;
-        color: #2051a9;
-        text-shadow: #6495ed 2px 2px;
     }
 
     #temple-album {
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-        margin: 1rem 4rem;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     }
 }
