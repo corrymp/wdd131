@@ -33,7 +33,7 @@
         backdrop-filter: blur(4px);
         background-color: #ffffffcc;
         border-bottom: unset;
-        box-shadow: #111 1px 1px 20px 1px;
+        box-shadow: var(--b) 1px 1px 20px 1px;
         padding: 0;
     }
 
@@ -50,7 +50,7 @@
     }
 
     h2 {
-        background-color: #E88699;
+        background-color: var(--pale-danish-red);
         float: right;
         font-size: 2.5em;
         grid-row: 2/3;
