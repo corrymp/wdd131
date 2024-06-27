@@ -1,0 +1,94 @@
+@media screen and (min-width:900px) {
+
+    #content {
+        grid-template-rows: 10em 30em 10em;
+    }
+
+    /* Header */
+    header {
+        display: flex;
+        justify-content: center;
+        grid-row: 1/2;
+    }
+
+    h1 {
+        font-size: 4em;
+        margin-bottom: 0.33em;
+    }
+
+    /* Main */
+    main {
+        grid-row: 2/4;
+        display: grid;
+        grid-template-columns: 1.3em 21.3em auto 17.5em 1.2em;
+        grid-template-rows: 2.6em 17.9em 7.5em 9.5em auto;
+    }
+
+    #hero {
+        grid-column: 1/-1;
+        grid-row: 1/-1;
+    }
+
+    section {
+        backdrop-filter: blur(4px);
+        background-color: #ffffffcc;
+        border-bottom: unset;
+        box-shadow: #111 1px 1px 20px 1px;
+        padding: 0;
+    }
+
+    #data {
+        grid-column: 2/3;
+        grid-row: 2/4;
+        grid-template-rows: 0.8em 5em 19.5em;
+    }
+
+    #weather {
+        grid-column: 4/5;
+        grid-row: 3/5;
+        grid-template-rows: 0.8em 5em 11.15em;
+    }
+
+    h2 {
+        background-color: #E88699;
+        float: right;
+        font-size: 2.5em;
+        grid-row: 2/3;
+        line-height: 2em;
+        position: relative;
+        right: 0.22em;
+        text-align: left;
+        text-indent: 0.43em;
+    }
+
+    #data h2 {
+        width: 7.6em;
+    }
+
+    #weather h2 {
+        width: 6.25em;
+    }
+
+    .weather::after {
+        content: " ⛅";
+    }
+
+    ul {
+        grid-row: 3/4;
+        grid-template-rows: 2.1em repeat(8, 2.1em);
+    }
+
+    /* SVG */
+    svg {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        grid-row: 4;
+    }
+
+    footer p {
+        font-size: 1.5em;
+    }
+}
