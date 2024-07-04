@@ -1,0 +1,46 @@
+* {
+    border: 0;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    font-family: sans-serif;
+}
+
+table {
+    border: 1px solid gray;
+    border-collapse: collapse;
+    margin: 16px auto;
+
+    caption {
+        caption-side: bottom;
+        font-size: .75em;
+        padding: 8px;
+    }
+
+    tr:first-child th,
+    th:first-child {
+        background-color: black;
+        color: white;
+    }
+
+    th {
+        background-color: dimgray;
+        color: white;
+        padding: 4px 8px;
+    }
+
+    td {
+        border: 1px solid gray;
+        padding: 4px 8px;
+        text-align: center;
+    }
+
+    td:first-child {
+        font-weight: normal;
+    }
+
+    tbody tr:nth-child(even) {
+        background-color: darkgray;
+    }
+}

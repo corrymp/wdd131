@@ -1,0 +1,43 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    word-wrap: break-word;
+}
+
+header {
+    color: #fff;
+    background-color: #044004;
+    padding: 4px;
+    text-align: center;
+}
+
+main {
+    background-image: linear-gradient(#088008, #044004);
+    padding: 4px 0;
+}
+
+picture {
+    background-color: #000;
+}
+
+img {
+    display: block;
+    margin: 16px auto;
+    animation-name: fade-in;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+@keyframes fade-in {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+footer {
+    background-color: #088008;
+    color: #fff;
+    padding: 8px 0;
+    text-align: center;
+}

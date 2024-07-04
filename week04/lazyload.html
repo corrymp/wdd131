@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lazyload practice</title>
+    <link rel="stylesheet" href="styles/lazyload.css">
+    <script src="../scripts/getdates.js" defer></script>
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>Lazyloading practice</h1>
+        </header>
+        <main>
+            <picture>
+                <img width="400" height="600" loading="lazy" src="images/sdieg_evening_tower.webp"
+                    alt="San Diego Temple">
+            </picture>
+            <picture>
+                <img width="400" height="600" loading="lazy" src="images/sdieg_evening.webp" alt="San Diego Temple">
+            </picture>
+            <picture>
+                <img width="400" height="600" loading="lazy" src="images/sdieg_tower.webp" alt="San Diego Temple">
+            </picture>
+            <picture>
+                <img width="400" height="600" loading="lazy" src="images/sdieg_clouds_clear.webp"
+                    alt="San Diego Temples">
+            </picture>
+            <picture>
+                <img width="400" height="600" loading="lazy" src="images/sdieg_nametag.webp" alt="San Diego Temple">
+            </picture>
+            <picture>
+                <img width="400" height="600" loading="lazy" src="images/sdieg_selfie.webp" alt="San Diego Temple">
+            </picture>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> | Corry McConnell Palmer | California</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+
+</html>
