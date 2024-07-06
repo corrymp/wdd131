@@ -63,7 +63,7 @@ header {
     flex-direction: column;
 }
 
-.nav button {
+.nav a {
     background-color: #1e5d5f;
     color: #fff;
     display: none;
@@ -74,23 +74,23 @@ header {
     width: 100%;
 }
 
-.nav button:hover {
+.nav a:hover {
     background-color: #003f37;
     box-shadow: 1px 1px #003f37, -1px -1px #003f37, 1px -1px #003f37, -1px 1px #003f37;
     text-shadow: 2px 2px #7f9f9b;
 }
 
-.nav button.active {
+.nav a.active {
     background-color: #58a1a3;
     color: #000;
 }
 
-.nav button.active:hover {
+.nav a.active:hover {
     box-shadow: unset;
     text-shadow: #1e5d5f 1px 1px;
 }
 
-.open button {
+.open a {
     display: block;
 }
 
