@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Temple Album</title>
+    <meta name="author" content="Corry McConnell Palmer">
+    <meta name="description"
+        content="This is an album of Temple pictures made by Corry McConnell Palmer for classwork in 'WDD 131 - Dynamic Web Fundamentals'." />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <script src="scripts/filtered-temples.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&family=Lora:ital@0;1&display=swap">
+</head>
+
+<body>
+    <div id="content">
+        <header>
+            <h1>Temple Album</h1>
+            <button id="menu" type="button" aria-label="Navigation Menu"></button>
+            <nav class="nav">
+                <button class="home active" type="button">
+                    <p>Home</p>
+                </button>
+                <button class="old" type="button">
+                    <p>Old</p>
+                </button>
+                <button class="new" type="button">
+                    <p>New</p>
+                </button>
+                <button class="large" type="button">
+                    <p>Large</p>
+                </button>
+                <button class="small" type="button">
+                    <p>Small</p>
+                </button>
+            </nav>
+        </header>
+
+        <main>
+            <h2 id="title">Home</h2>
+            <div id="temple-album">
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy;<span id="currentyear"></span> | Corry McConnell Palmer | California</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+
+</html>
