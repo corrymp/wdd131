@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project Site Plan<br>Corry McConnell Palmer<br>WDD131</title>
+    <meta name="author" content="Corry McConnell Palmer">
+    <meta name="description"
+        content="This is the site plan for Corry McConnell Palmer's final project in 'WDD 131 - Dynamic Web Fundamentals'.">
+
+    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&family=Lora:ital@0;1&display=swap">
+
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/siteplan.js" defer></script>
+</head>
+
+<body>
+    <div id='content'>
+        <header>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="none"
+                viewBox="0 0 16 16">
+                <rect width="16" height="16" fill="#7f9f9b" rx="0" />
+                <circle cx="8" cy="8" r="2" fill="#7F7FFF" />
+                <circle cx="8" cy="8" r="1.25" fill="#7f9f9b" />
+                <circle cx="4.7" cy=".9" r="2" fill="#7F7FFF" />
+                <circle cx="4.7" cy=".9" r="1.25" fill="#7f9f9b" />
+                <path fill="#FF7F7F"
+                    d="m4.407 4.435.422.906L.298 7.454l-.423-.906zm-2.658-.968L3.862 8l-.907.422L.842 3.89zm11.792 10.5.423.907-4.532 2.113-.422-.907zM10.883 13l2.113 4.531-.906.423-2.113-4.531z" />
+                <path fill="beige"
+                    d="m7.34.31.94.343-4.788 13.155-.94-.342zm5.168 1.882.94.342L8.66 15.689l-.94-.342zm-9.974.36L15.689 7.34l-.342.94L2.192 3.492zM.653 7.72l13.155 4.788-.342.94L.311 8.66z" />
+            </svg>
+            <h1>Tic-Tac-Click Site Plan</h1>
+            <button id="menu" type="button" aria-label="Navigation Menu"></button>
+            <nav class="nav">
+                <a href="#">
+                    <p>Play</p>
+                </a>
+                <a href="#">
+                    <p>Rules</p>
+                </a>
+                <a href="#">
+                    <p>Tactics</p>
+                </a>
+                <a href="#">
+                    <p>Site Home</p>
+                </a>
+            </nav>
+        </header>
+        <main>
+            <section id="site-name">
+                <h2 class="center">- Site Name -</h2>
+                <hr>
+                <p class="center">Tic-Tac-Click</p>
+                <p class="center">(tic-tac-click.com)</p>
+                <p>The reason for this name is that it is clearly connected to Tic-tac-toe, while also including a
+                    'click', like the click of a mouse. The domain is available at the time of writing.</p>
+            </section>
+            <section id="site-purpose">
+                <h2 class="center">- Site Purpose -</h2>
+                <hr>
+                <p>This site provides a place to play a simple game of Tic-tac-toe, and allows the user to track winners
+                    using LocalStorage. </p>
+                <p>It also introduces users to basic Tic-tac-toe rules and more advances strategies.</p>
+            </section>
+            <section id="scenarios">
+                <h2 class="center">- Scenarios -</h2>
+                <hr>
+                <p>Possible question site visitors might ask:</p>
+                <ul>
+                    <li>How do you play Tic-tac-toe?</li>
+                    <li>What can I do to win more often?</li>
+                    <li>How can I make the game more <em>exciting?</em></li>
+                </ul>
+            </section>
+            <section id="colors">
+                <h2 class="center">- Color Schema -</h2>
+                <hr>
+                <h3 class="center">Colors Used:</h3>
+                <div id="color-container">
+                    <p>Primary Colors</p>
+                    <div class="color tan">
+                        <p>#F5F5DC<br>Tan</p>
+                    </div>
+                    <div class="color dark-green">
+                        <p>#0D5861<br>Dark Green</p>
+                    </div>
+                    <div class="color medium-green">
+                        <p>#508F91<br>Medium Green</p>
+                    </div>
+                    <div class="color light-green">
+                        <p>#7F9F9B<br>Light Green</p>
+                    </div>
+                    <p>Accent Colors</p>
+                    <div class="color bright-yellow">
+                        <p>#FFFFAF<br>Bright Yellow</p>
+                    </div>
+                    <div class="color off-white">
+                        <p>#EEEEEE<br>Off-White</p>
+                    </div>
+                    <p>Utility Colors</p>
+                    <div class="color red">
+                        <p>#9B0000<br>Red</p>
+                    </div>
+                    <div class="color black">
+                        <p>#000000<br>Black</p>
+                    </div>
+                    <div class="color white">
+                        <p>#FFFFFF<br>White</p>
+                    </div>
+                </div>
+                <div id="color-context">
+                    <h3 class="center">Colors in Context</h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, quam distinctio, repellendus
+                        suscipit odio voluptatibus corporis perferendis facere libero alias, in numquam nobis error at
+                        asperiores magni quasi iure molestiae.</p>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsam iure atque sapiente
+                            consectetur, quae tenetur obcaecati cumque sed laudantium velit quia consequatur
+                            repudiandae, ratione rerum facilis labore consequuntur et.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="fonts">
+                <h2 class="center">- Typography -</h2>
+                <hr>
+                <h3 class="center">Fonts Used:</h3>
+                <div id="font-container">
+                    <p class="lora center">"Lora"</p>
+                    <p class="cousine center">"Cousine"</p>
+                </div>
+                <h3 class="center">fonts in Context:</h3>
+                <div id="font-context">
+                    <h4>Lora is used in Headings and special cases.</h4>
+                    <p>Cousine is used in all other cases.</p>
+                </div>
+            </section>
+            <section id="wireframe">
+                <div id="wireframe-text">
+                    <h2 class="center">- Wireframes -</h2>
+                    <hr>
+                    <p class="center">Home Page</p>
+                </div>
+                <img id="wireframe-desktop" src="images/wireframe-desktop.png" alt="desktop layout wireframe"
+                    width="1028" height="636">
+                <img id="wireframe-mobile" src="images/wireframe-mobile.png" alt="mobile layout wireframe" width="510"
+                    height="874">
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> | Corry McConnell Palmer | California</p>
+            <p id="lastModified"></p>
+            <div id="footer-links">
+                <a href="#">Site Plan</a>
+                <a href="#">External Sources</a>
+                <a href="#">Another Link</a>
+                <a href="#">One More Link</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
