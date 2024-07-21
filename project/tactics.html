@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project | Tactics | Corry McConnell Palmer | WDD131</title>
+    <meta name="author" content="Corry McConnell Palmer">
+    <meta name="description"
+        content="This is the Final Project Tactics Page for Corry McConnell Palmer's classwork in 'WDD 131 - Dynamic Web Fundamentals'.">
+
+        
+    <link rel="stylesheet" href="styles/tactics.css">
+    <link rel="stylesheet" href="styles/subpage.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&family=Lora:ital@0;1&display=swap">
+
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/tactics.js" defer></script>
+</head>
+
+<body>
+    <div id='content'>
+        <header>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="none"
+                viewBox="0 0 16 16">
+                <rect class="svg-back" width="16" height="16" rx="0" />
+                <circle class="svg-o" cx="8" cy="8" r="2" />
+                <circle class="svg-back" cx="8" cy="8" r="1.25" />
+                <circle class="svg-o" cx="4.7" cy=".9" r="2" />
+                <circle class="svg-back" cx="4.7" cy=".9" r="1.25" />
+                <path class="svg-x"
+                    d="m4.407 4.435.422.906L.298 7.454l-.423-.906zm-2.658-.968L3.862 8l-.907.422L.842 3.89zm11.792 10.5.423.907-4.532 2.113-.422-.907zM10.883 13l2.113 4.531-.906.423-2.113-4.531z" />
+                <path class="svg-grid"
+                    d="m7.34.31.94.343-4.788 13.155-.94-.342zm5.168 1.882.94.342L8.66 15.689l-.94-.342zm-9.974.36L15.689 7.34l-.342.94L2.192 3.492zM.653 7.72l13.155 4.788-.342.94L.311 8.66z" />
+            </svg>
+            <h1>Tic Tac Click</h1>
+            <button id="menu" type="button" aria-label="Navigation Menu"></button>
+            <button id="darkmode-button" type="button" aria-label="Toggle Dark Mode"></button>
+            <nav class="nav">
+                <a href="project.html">
+                    <p>Play</p>
+                </a>
+                <a href="rules.html">
+                    <p>Rules</p>
+                </a>
+                <a href="tactics.html" class="active">
+                    <p>Tactics</p>
+                </a>
+                <a href="../index.html">
+                    <p>Site Home</p>
+                </a>
+                <button id="darkmode-nav" type="button" aria-label="Toggle Dark Mode">Dark Mode</button>
+            </nav>
+        </header>
+        <main>
+            <section id="tactics" class="sub-page">
+                <h2>Tactics</h2>
+                <hr>
+                <p>The first thing to know is this: If both players are making perfect moves, you will always draw.</p>
+                <p>The solution? Only play against those that have not learned perfect play.</p>
+                <p>But how <em>does</em> one play perfectly?</p>
+                <p>The following list of instructions will tell you how.</p>
+                <hr>
+                <p>For each turn, take the first option that is available to you:</p>
+                <ol>
+                    <li>If there is an open square that makes three-in-a-row with your shape, take it.</li>
+                    <li>If there is an open square that makes three-in-a-row for your opponent, take it.</li>
+                    <li>
+                        If there are two of your shapes on the board in such a way that both the intersecting square and
+                        the two other squares in the line are empty, take it.
+                        <figure class="tactic-grid">
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space x"></div>
+                                <div class="tactic-grid-space x-move"></div>
+                                <div class="tactic-grid-space"></div>
+                            </div>
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space"></div>
+                            </div>
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space x"></div>
+                                <div class="tactic-grid-space"></div>
+                            </div>
+                            <figcaption>Figure 1</figcaption>
+                        </figure>
+                        <br>
+                        In figure 1, we see X has a taken a space in row 1, and the remaining spaces are untaken. They
+                        have also taken a space in column 2, and the remaining spaces are empty. This means the best
+                        move would be to take the space at row 1, column 2. Please note that column 1, row 3 is also
+                        correct in this case.
+                    </li>
+                    <li>
+                        <figure class="tactic-grid right-float">
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space x"></div>
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space"></div>
+                            </div>
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space "></div>
+                                <div class="tactic-grid-space o"></div>
+                                <div class="tactic-grid-space"></div>
+                            </div>
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space o-move"></div>
+                                <div class="tactic-grid-space x"></div>
+                            </div>
+                            <figcaption>Figure 2</figcaption>
+                        </figure>
+                        If there are two of your opponent's shapes on the board in such a way that for each line both
+                        the intersecting square and the other square are empty,
+                        if you have a way to make a two-in-a-row, make a two-in-a-row, otherwise take the intersection.
+                        <br>
+                        In figure 2, we see that X has taken row 1 column 1 and row 3 column 3, and all the remaining
+                        spaces in those rows and columns are vacant.
+                        As O has taken center, the correct move would be any of the edge squares as X must then take the
+                        opposite edge to prevent O from winning.
+                        <br>
+                        If a corner is taken, X would take the opposing corner thus making a fork and winning the game.
+                    </li>
+                    <li>Take the center square if empty.</li>
+                    <li>If the opponent has taken a corner and the opposite corner is empty, take the opposite corner.
+                        <figure class="tactic-grid">
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space o-move"></div>
+                            </div>
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space o"></div>
+                                <div class="tactic-grid-space"></div>
+                            </div>
+                            <div class="tactic-grid-row">
+                                <div class="tactic-grid-space x"></div>
+                                <div class="tactic-grid-space"></div>
+                                <div class="tactic-grid-space"></div>
+                            </div>
+                            <figcaption>Figure 3</figcaption>
+                        </figure>
+                        <br>
+                        We see this in figure 3: X has taken one corner, so O should take the other.
+                    </li>
+                    <li>Take an empty corner square.</li>
+                    <li>Take an empty side square.</li>
+                </ol>
+            </section>
+            <section id="ai" class="sub-page">
+                <h2>A.I. Assistance</h2>
+                <p>All that might be too difficult to follow.</p>
+                <p> That's why our trusty AI assistant '<em>Tic Tac Todd</em>' is here to help!</p>
+                <p>Simply enter the current your board and shape, and Todd will find the best move!</p>
+                <hr>
+                <form id="ai-form" method="get" action="tactics.html#ai">
+                    <h3>Enter current board state</h3>
+                    <div id="ai-board">
+                        <div class="ai-board-row">
+                            <label class="ai-board-space">
+                                <input id="space-0" type="checkbox" name="0" value="0">
+                            </label>
+                            <label class="ai-board-space">
+                                <input id="space-1" type="checkbox" name="1" value="0">
+                            </label>
+
+                            <label class="ai-board-space">
+                                <input id="space-2" type="checkbox" name="2" value="0">
+                            </label>
+                        </div>
+                        <div class="ai-board-row">
+                            <label class="ai-board-space">
+                                <input id="space-3" type="checkbox" name="3" value="0">
+                            </label>
+                            <label class="ai-board-space">
+                                <input id="space-4" type="checkbox" name="4" value="0">
+                            </label>
+                            <label class="ai-board-space">
+                                <input id="space-5" type="checkbox" name="5" value="0">
+                            </label>
+                        </div>
+                        <div class="ai-board-row">
+                            <label class="ai-board-space">
+                                <input id="space-6" type="checkbox" name="6" value="0">
+                            </label>
+                            <label class="ai-board-space">
+                                <input id="space-7" type="checkbox" name="7" value="0">
+                            </label>
+                            <label class="ai-board-space">
+                                <input id="space-8" type="checkbox" name="8" value="0">
+                            </label>
+                        </div>
+                    </div>
+                    <h3>Select your shape</h3>
+                    <div id="ai-shape">
+
+                        <label for="shape-0" title="Shape O">
+                            <input id="shape-0" type="radio" name="shape" value="1" required>
+                            <span class="checkbox o"></span>
+                        </label>
+
+                        <label for="shape-1" title="Shape X">
+                            <input id="shape-1" type="radio" name="shape" value="2" required>
+                            <span class="checkbox x"></span>
+                        </label>
+
+                    </div>
+
+                    <input id="ai-submit" type="submit" value="Get Move">
+                </form>
+            </section>
+        </main>
+        <footer>
+            <p>&copy;<span id="currentyear"></span> | Corry McConnell Palmer | California</p>
+            <p id="lastModified"></p>
+            <div id="footer-links">
+                <a href="siteplan.html">Site Plan</a>
+                <a href="rules.html">Rules</a>
+                <a href="tactics.html">Tactics</a>
+                <a href="sources.html">External Sources</a>
+                <a href="../index.html">Site Home</a>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

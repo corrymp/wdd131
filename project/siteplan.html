@@ -9,8 +9,13 @@
     <meta name="description"
         content="This is the site plan for Corry McConnell Palmer's final project in 'WDD 131 - Dynamic Web Fundamentals'.">
 
+        
     <link rel="stylesheet" href="styles/siteplan.css">
-    <link rel="stylesheet" href="styles/siteplan-large.css">
+    <link rel="stylesheet" href="styles/subpage.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
@@ -18,7 +23,7 @@
 
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <script src="../scripts/getdates.js" defer></script>
-    <script src="scripts/siteplan.js" defer></script>
+    <script src="scripts/project.js" defer></script>
 </head>
 
 <body>
@@ -26,35 +31,37 @@
         <header>
             <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="none"
                 viewBox="0 0 16 16">
-                <rect width="16" height="16" fill="#7f9f9b" rx="0" />
-                <circle cx="8" cy="8" r="2" fill="#7F7FFF" />
-                <circle cx="8" cy="8" r="1.25" fill="#7f9f9b" />
-                <circle cx="4.7" cy=".9" r="2" fill="#7F7FFF" />
-                <circle cx="4.7" cy=".9" r="1.25" fill="#7f9f9b" />
-                <path fill="#FF7F7F"
+                <rect class="svg-back" width="16" height="16" rx="0" />
+                <circle class="svg-o" cx="8" cy="8" r="2" />
+                <circle class="svg-back" cx="8" cy="8" r="1.25" />
+                <circle class="svg-o" cx="4.7" cy=".9" r="2" />
+                <circle class="svg-back" cx="4.7" cy=".9" r="1.25" />
+                <path class="svg-x"
                     d="m4.407 4.435.422.906L.298 7.454l-.423-.906zm-2.658-.968L3.862 8l-.907.422L.842 3.89zm11.792 10.5.423.907-4.532 2.113-.422-.907zM10.883 13l2.113 4.531-.906.423-2.113-4.531z" />
-                <path fill="beige"
+                <path class="svg-grid"
                     d="m7.34.31.94.343-4.788 13.155-.94-.342zm5.168 1.882.94.342L8.66 15.689l-.94-.342zm-9.974.36L15.689 7.34l-.342.94L2.192 3.492zM.653 7.72l13.155 4.788-.342.94L.311 8.66z" />
             </svg>
-            <h1>Tic-Tac-Click Site Plan</h1>
+            <h1>Tic Tac Click</h1>
             <button id="menu" type="button" aria-label="Navigation Menu"></button>
+            <button id="darkmode-button" type="button" aria-label="Toggle Dark Mode"></button>
             <nav class="nav">
-                <a href="#">
+                <a href="project.html">
                     <p>Play</p>
                 </a>
-                <a href="#">
+                <a href="rules.html">
                     <p>Rules</p>
                 </a>
-                <a href="#">
+                <a href="tactics.html">
                     <p>Tactics</p>
                 </a>
-                <a href="#">
+                <a href="../index.html">
                     <p>Site Home</p>
                 </a>
+                <button id="darkmode-nav" type="button" aria-label="Toggle Dark Mode">Dark Mode</button>
             </nav>
         </header>
         <main>
-            <section id="site-name">
+            <section id="site-name" class="sub-page">
                 <h2 class="center">- Site Name -</h2>
                 <hr>
                 <p class="center">Tic-Tac-Click</p>
@@ -62,14 +69,14 @@
                 <p>The reason for this name is that it is clearly connected to Tic-tac-toe, while also including a
                     'click', like the click of a mouse. The domain is available at the time of writing.</p>
             </section>
-            <section id="site-purpose">
+            <section id="site-purpose" class="sub-page">
                 <h2 class="center">- Site Purpose -</h2>
                 <hr>
                 <p>This site provides a place to play a simple game of Tic-tac-toe, and allows the user to track winners
                     using LocalStorage. </p>
                 <p>It also introduces users to basic Tic-tac-toe rules and more advances strategies.</p>
             </section>
-            <section id="scenarios">
+            <section id="scenarios" class="sub-page">
                 <h2 class="center">- Scenarios -</h2>
                 <hr>
                 <p>Possible question site visitors might ask:</p>
@@ -79,7 +86,7 @@
                     <li>How can I make the game more <em>exciting?</em></li>
                 </ul>
             </section>
-            <section id="colors">
+            <section id="colors" class="sub-page">
                 <h2 class="center">- Color Schema -</h2>
                 <hr>
                 <h3 class="center">Colors Used:</h3>
@@ -128,7 +135,7 @@
                     </div>
                 </div>
             </section>
-            <section id="fonts">
+            <section id="fonts" class="sub-page">
                 <h2 class="center">- Typography -</h2>
                 <hr>
                 <h3 class="center">Fonts Used:</h3>
@@ -142,26 +149,27 @@
                     <p>Cousine is used in all other cases.</p>
                 </div>
             </section>
-            <section id="wireframe">
+            <section id="wireframe" class="sub-page">
                 <div id="wireframe-text">
                     <h2 class="center">- Wireframes -</h2>
                     <hr>
                     <p class="center">Home Page</p>
                 </div>
                 <img id="wireframe-desktop" src="images/wireframe-desktop.png" alt="desktop layout wireframe"
-                    width="1028" height="636">
+                    width="1028" height="636" loading="lazy">
                 <img id="wireframe-mobile" src="images/wireframe-mobile.png" alt="mobile layout wireframe" width="510"
-                    height="874">
+                    height="874" loading="lazy">
             </section>
         </main>
         <footer>
             <p>&copy;<span id="currentyear"></span> | Corry McConnell Palmer | California</p>
             <p id="lastModified"></p>
             <div id="footer-links">
-                <a href="#">Site Plan</a>
-                <a href="#">External Sources</a>
-                <a href="#">Another Link</a>
-                <a href="#">One More Link</a>
+                <a href="siteplan.html">Site Plan</a>
+                <a href="rules.html">Rules</a>
+                <a href="tactics.html">Tactics</a>
+                <a href="sources.html">External Sources</a>
+                <a href="../index.html">Site Home</a>
             </div>
         </footer>
     </div>

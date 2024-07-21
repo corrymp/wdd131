@@ -1,0 +1,100 @@
+@media screen and (min-width: 1160px) {
+
+    /* Global */
+    #content {
+        grid-template-rows: 128px auto 100px;
+    }
+
+    /* Header */
+    header {
+        border-bottom: 1px solid var(--bright-yellow);
+        grid-template-columns: 128px auto 66% 16px;
+        height: 100%;
+        position: sticky;
+        top: -26px;
+    }
+
+    .logo {
+        height: 6em;
+        width: 6em;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #darkmode-button {
+        background: none;
+        background-color: var(--medium-green);
+        border-radius: 16px;
+        border: 0;
+        cursor: pointer;
+        display: block;
+        grid-column: 3/4;
+        grid-row: 1/2;
+        font-size: 1.5rem;
+        height: 32px;
+        line-height: 36px;
+        opacity: 0.44;
+        position: sticky;
+        left: 100%;
+        top: 4px;
+        width: 32px;
+        z-index: 5;
+    }
+
+    #darkmode-button::before {
+        content: "🌙";
+    }
+
+    #darkmode-button.dark::before {
+        content: "☀️";
+    }
+
+    #darkmode-button:hover {
+        opacity: 1;
+    }
+
+    /* Nav */
+    .nav {
+        border-bottom: none;
+        flex-direction: row;
+        grid-column: 3/4;
+        position: relative;
+    }
+
+    .nav a {
+        align-items: center;
+        border-radius: 16px;
+        display: flex;
+        justify-content: space-around;
+        margin: auto 0.7em;
+        padding: 0.5em 0;
+        width: 25%;
+    }
+
+    .nav #darkmode-nav {
+        display: none;
+    }
+
+    /* Footer */
+    footer {
+        grid-template-columns: 33.5% 66.5%;
+        grid-template-rows: unset;
+    }
+
+    footer p {
+        grid-column: 1/2;
+        grid-row: unset;
+    }
+
+    #lastModified {
+        grid-column: 1/2;
+        grid-row: unset;
+    }
+
+    #footer-links {
+        grid-column: 2/3;
+        grid-row: 1/3;
+    }
+}

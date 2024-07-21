@@ -1,0 +1,201 @@
+/* Figures */
+.tactic-grid {
+    aspect-ratio: 1;
+    background-color: var(--dark-green);
+    border: 1px solid var(--tan);
+    box-shadow: 1px 1px 2px var(--bright-yellow);
+    display: flex;
+    flex-direction: column;
+    float: left;
+    margin: 0.75em;
+    max-width: 13em;
+    padding: 0.5em;
+    width: auto;
+    z-index: 1;
+}
+
+.right-float {
+    float: right;
+}
+
+.tactic-grid figcaption {
+    color: var(--off-white);
+    padding-top: 0.5em;
+    text-align: center;
+}
+
+.tactic-grid-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.tactic-grid-space {
+    background-color: var(--light-green);
+    border: 2px solid var(--tan);
+    font-size: 4em;
+    height: 4rem;
+    text-align: center;
+    text-shadow: var(--contrast);
+    width: 4rem;
+}
+
+/* Todd */
+#ai {
+    margin-top: 1em;
+}
+
+#ai-form {
+    border: 2px solid var(--bright-yellow);
+    border-radius: 32px;
+    color: var(--bright-yellow);
+    display: flex;
+    flex-direction: column;
+    background-color: var(--medium-green);
+    margin: 0 auto;
+    max-width: 45%;
+}
+
+#ai-form h3 {
+    background-color: var(--bright-yellow);
+    border-radius: 16px;
+    color: var(--black);
+    margin: 1em auto 0.25em auto;
+    outline: 2px solid var(--dark-green);
+    text-shadow: none;
+}
+
+#ai-form input {
+    cursor: pointer;
+    outline: 2px solid var(--dark-green);
+}
+
+#ai-board {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--light-green);
+    border: 2px solid var(--tan);
+    margin: 0 auto;
+}
+
+.ai-board-row {
+    display: flex;
+}
+
+.ai-board-space {
+    aspect-ratio: 1;
+    min-width: 75px;
+    min-height: 75px;
+    cursor: pointer;
+    border: 2px solid var(--tan);
+    font-size: 4em;
+    line-height: 75px;
+    text-align: center;
+    text-shadow: var(--contrast);
+}
+
+.ai-board-space input {
+    display: none;
+}
+
+#ai-shape {
+    background-color: var(--light-green);
+    border: 4px solid var(--tan);
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    margin: 0 auto 0.75em auto;
+    padding: 0.25em 0.99em 0.5em 0.99em;
+}
+
+#ai-shape label {
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    padding: 0.5em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#ai-shape label:first-of-type {
+    margin-bottom: 0.5em;
+}
+
+#ai-shape label input {
+    float: left;
+    height: 0;
+    opacity: 0;
+    width: 0;
+}
+
+.checkbox {
+    aspect-ratio: 1;
+    background-color: var(--off-white);
+    border: 1px solid var(--light-green);
+    border-radius: 8px;
+    height: 1.25em;
+    left: -2px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 1.25em;
+}
+
+.checkbox::before {
+    bottom: -1.5px;
+    display: none;
+    left: -0.5px;
+    position: relative;
+}
+
+input:checked+.checkbox {
+    background-color: var(--dark-green);
+    border-color: var(--medium-green);
+}
+
+input+.o::before {
+    display: block;
+    color: var(--o);
+    content: "O";
+}
+
+input+.x::before {
+    display: block;
+    color: var(--x);
+    content: "X";
+}
+
+input:focus-visible+.checkbox {
+    outline: 2px solid var(--red);
+}
+
+#ai-submit {
+    background-color: var(--bright-yellow);
+    color: var(--dark-green);
+    margin: 2em auto;
+    padding: 1em;
+    border-radius: 1em;
+    text-shadow: 1px 1px var(--light-green);
+}
+
+/* Icons */
+.o::before {
+    color: var(--o);
+    content: "O";
+}
+
+.x::before {
+    color: var(--x);
+    content: "X";
+}
+
+.o-move::before {
+    color: var(--bright-yellow);
+    content: "O";
+    text-shadow: 0 0 4px var(--red);
+}
+
+.x-move::before {
+    color: var(--bright-yellow);
+    content: "X";
+    text-shadow: 0 0 4px var(--red);
+}

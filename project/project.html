@@ -4,40 +4,144 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project Site Plan | Corry McConnell Palmer | WDD131</title>
+    <title>Final Project | Corry McConnell Palmer | WDD131</title>
     <meta name="author" content="Corry McConnell Palmer">
     <meta name="description"
-        content="This is the site plan for Corry McConnell Palmer's final project in 'WDD 131 - Dynamic Web Fundamentals'." />
+        content="This is the Final Project for Corry McConnell Palmer's classwork in 'WDD 131 - Dynamic Web Fundamentals'.">
 
-    <link rel="stylesheet" href="styles/siteplan.css">
+    <link rel="stylesheet" href="styles/game.css">
+    <link rel="stylesheet" href="styles/project.css">
+    <link rel="stylesheet" href="styles/project-large.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Cousine:ital@0;1&family=Lora:ital@0;1&display=swap">
 
-    <link rel="icon" type="image/png" href="images/favicon.ico" />
-    <script src="scripts/getdates.js" defer></script>
-    <script src="scripts/siteplan.js" defer></script>
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+    <script src="../scripts/getdates.js" defer></script>
+    <script src="scripts/project.js" defer></script>
+    <script src="scripts/game.js" defer></script>
 </head>
 
 <body>
     <div id='content'>
         <header>
-            <h1>Tic-Tac-Click Site Plan</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Page 2</a>
-                <a href="#">Page 3</a>
-                <a href="#">corrymp Home Link</a>
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="512" height="512" fill="none"
+                viewBox="0 0 16 16">
+                <rect class="svg-back" width="16" height="16" rx="0" />
+                <circle class="svg-o" cx="8" cy="8" r="2" />
+                <circle class="svg-back" cx="8" cy="8" r="1.25" />
+                <circle class="svg-o" cx="4.7" cy=".9" r="2" />
+                <circle class="svg-back" cx="4.7" cy=".9" r="1.25" />
+                <path class="svg-x"
+                    d="m4.407 4.435.422.906L.298 7.454l-.423-.906zm-2.658-.968L3.862 8l-.907.422L.842 3.89zm11.792 10.5.423.907-4.532 2.113-.422-.907zM10.883 13l2.113 4.531-.906.423-2.113-4.531z" />
+                <path class="svg-grid"
+                    d="m7.34.31.94.343-4.788 13.155-.94-.342zm5.168 1.882.94.342L8.66 15.689l-.94-.342zm-9.974.36L15.689 7.34l-.342.94L2.192 3.492zM.653 7.72l13.155 4.788-.342.94L.311 8.66z" />
+            </svg>
+            <h1>Tic Tac Click</h1>
+            <button id="menu" type="button" aria-label="Navigation Menu"></button>
+            <button id="darkmode-button" type="button" aria-label="Toggle Dark Mode"></button>
+            <nav class="nav">
+                <a href="project.html" class="active">
+                    <p>Play</p>
+                </a>
+                <a href="rules.html">
+                    <p>Rules</p>
+                </a>
+                <a href="tactics.html">
+                    <p>Tactics</p>
+                </a>
+                <a href="../index.html">
+                    <p>Site Home</p>
+                </a>
+                <button id="darkmode-nav" type="button" aria-label="Toggle Dark Mode">Dark Mode</button>
             </nav>
         </header>
         <main>
+            <div id="sizer">
+                <div id="game">
+                    <div id="popups">
+                        <h2 id="win-text" class="popup">Winner: <span id="winner"></span>!</h2>
+                        <button type="button" id="start-game" class="popup">Play</button>
+                    </div>
+                    <div id="diag-wins" class="win-holder">
+                        <div>
+                            <div class="win-line win-diag" id="diag45"></div>
+                            <div class="win-line win-diag" id="diag-45"></div>
+                        </div>
+                    </div>
+                    <div id="col-wins" class="win-holder">
+                        <div class="win-line win-col" id="col0"></div>
+                        <div class="win-line win-col" id="col1"></div>
+                        <div class="win-line win-col" id="col2"></div>
+                    </div>
+                    <div id="row-wins" class="win-holder">
+                        <div class="win-line win-row" id="row0"></div>
+                        <div class="win-line win-row" id="row1"></div>
+                        <div class="win-line win-row" id="row2"></div>
+                    </div>
+                    <button type="button" id="space-0" class="game-space" aria-label="Game board space row 1 position 1"
+                        disabled></button>
+                    <button type="button" id="space-1" class="game-space" aria-label="Game board space row 1 position 2"
+                        disabled></button>
+                    <button type="button" id="space-2" class="game-space" aria-label="Game board space row 1 position 3"
+                        disabled></button>
+                    <button type="button" id="space-3" class="game-space" aria-label="Game board space row 2 position 1"
+                        disabled></button>
+                    <button type="button" id="space-4" class="game-space" aria-label="Game board space row 2 position 2"
+                        disabled></button>
+                    <button type="button" id="space-5" class="game-space" aria-label="Game board space row 2 position 3"
+                        disabled></button>
+                    <button type="button" id="space-6" class="game-space" aria-label="Game board space row 3 position 1"
+                        disabled></button>
+                    <button type="button" id="space-7" class="game-space" aria-label="Game board space row 3 position 2"
+                        disabled></button>
+                    <button type="button" id="space-8" class="game-space" aria-label="Game board space row 3 position 3"
+                        disabled></button>
+                </div>
+
+                <div id="player-1-card" class="player-card">
+                    <h2 id="player-1-name" class="player-name player-1"><input placeholder="Player 1"></h2>
+                    <ul class="player-stats">
+                        <li><label>Color:<input id="player-1-color" class="player-color" placeholder="#7f7fff"></label>
+                        </li>
+                        <li><label>Shape:<input id="player-1-shape" class="player-shape" placeholder="O"></label></li>
+                        <li>Games Played:<span id="player-1-played" class="games-played">0</span></li>
+                        <li>Won:<span id="player-1-won" class="games-won">0</span></li>
+                        <li>Lost:<span id="player-1-lost" class="games-lost">0</span></li>
+                        <li>Drawed:<span id="player-1-draw" class="games-draw">0</span></li>
+                    </ul>
+                </div>
+
+                <div id="player-2-card" class="player-card">
+                    <h2 id="player-2-name" class="player-name player-2"><input placeholder="Player 2"></h2>
+                    <ul class="player-stats">
+                        <li><label>Color:<input id="player-2-color" class="player-color" placeholder="#ff7f7f"></label>
+                        </li>
+                        <li><label>Shape:<input id="player-2-shape" class="player-shape" placeholder="X"></label></li>
+                        <li>Games Played:<span id="player-2-played" class="games-played">0</span></li>
+                        <li>Won:<span id="player-2-won" class="games-won">0</span></li>
+                        <li>Lost:<span id="player-2-lost" class="games-lost">0</span></li>
+                        <li>Drawed:<span id="player-2-draw" class="games-draw">0</span></li>
+                    </ul>
+                </div>
+
+                <button type="button" id="update-styles" class="popup">Test Personalization</button>
+            </div>
         </main>
         <footer>
-            <p>Copyright info</p>
-            <a href="#">link to sources</a>
+            <p>&copy;<span id="currentyear"></span> | Corry McConnell Palmer | California</p>
+            <p id="lastModified"></p>
+            <div id="footer-links">
+                <a href="siteplan.html">Site Plan</a>
+                <a href="rules.html">Rules</a>
+                <a href="tactics.html">Tactics</a>
+                <a href="sources.html">External Sources</a>
+                <a href="../index.html">Site Home</a>
+            </div>
         </footer>
-        </divcontent>
+    </div>
 </body>
 
 </html>
